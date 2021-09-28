@@ -1,0 +1,119 @@
+html {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #7ddeff 0%, #ffc7e3 100%);
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+}
+.game {
+  height: 100vh;
+  text-transform: capitalize;
+}
+.game h1 {
+  color: rgb(66, 66, 66);
+  margin-bottom: 10px;
+}
+.game h2 {
+  color: rgb(66, 66, 66);
+  margin-bottom: 8px;
+}
+.game h3 {
+  color: rgb(66, 66, 66);
+  margin-top: 8px;
+}
+.game h3 span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.game-tie {
+  color: rgb(107, 107, 107);
+}
+.game-lost {
+  color: rgb(177, 53, 53);
+}
+.game-won {
+  color: rgb(31, 117, 69);
+}
+.game-details {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 210px;
+}
+.game-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+.game-buttons input {
+  width: 280px;
+  height: 300px;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.game-buttons input:hover {
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+}
+@media (max-width: 890px) {
+  .game-buttons input {
+    width: 200px;
+    height: 210px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 608px) {
+  .game-buttons input {
+    width: 150px;
+    height: 160px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 460px) {
+  .game-buttons input {
+    width: 100px;
+    height: 110px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 460px) {
+  .game-buttons input {
+    width: 80px;
+    height: 90px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 340px) {
+  .game-details h1 {
+    font-size: 1.5em;
+  }
+  .game-details h2 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 250px) {
+  .game-buttons input {
+    width: 70px;
+    height: 80px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+}
