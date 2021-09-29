@@ -53,7 +53,7 @@ body {
 }
 .game-buttons input {
   width: 280px;
-  height: 300px;
+  height: 280px;
   margin: auto;
   border: 1px solid gray;
   border-radius: 50%;
@@ -63,10 +63,16 @@ body {
   transition-timing-function: ease-in-out;
   transition-duration: 0.1s;
 }
+.game-buttons input:active {
+  box-shadow: 1px 1px 10px 10px rgb(109, 173, 106);
+  transform: rotate(30deg);
+  /* transition-duration: 0.12s; */
+}
+
 @media (max-width: 890px) {
   .game-buttons input {
     width: 200px;
-    height: 210px;
+    height: 200px;
     margin: auto;
     border: 1px solid gray;
     border-radius: 50%;
@@ -75,7 +81,7 @@ body {
 @media (max-width: 608px) {
   .game-buttons input {
     width: 150px;
-    height: 160px;
+    height: 150px;
     margin: auto;
     border: 1px solid gray;
     border-radius: 50%;
@@ -84,7 +90,7 @@ body {
 @media (max-width: 460px) {
   .game-buttons input {
     width: 100px;
-    height: 110px;
+    height: 100px;
     margin: auto;
     border: 1px solid gray;
     border-radius: 50%;
@@ -94,7 +100,7 @@ body {
 @media (max-width: 460px) {
   .game-buttons input {
     width: 80px;
-    height: 90px;
+    height: 80px;
     margin: auto;
     border: 1px solid gray;
     border-radius: 50%;
@@ -111,7 +117,7 @@ body {
 @media (max-width: 250px) {
   .game-buttons input {
     width: 70px;
-    height: 80px;
+    height: 70px;
     margin: auto;
     border: 1px solid gray;
     border-radius: 50%;
