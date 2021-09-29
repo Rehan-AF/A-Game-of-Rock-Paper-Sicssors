@@ -6,6 +6,8 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #7ddeff 0%, #ffc7e3 100%);
   background-size: 100%;
+  /* width: 100vw; */
+  /* height: 100vh; */
 
   background-repeat: no-repeat;
 }
@@ -24,6 +26,7 @@ body {
 .game h3 {
   color: rgb(66, 66, 66);
   margin-top: 8px;
+  margin-bottom: 0;
 }
 .game h3 span {
   display: block;
@@ -44,7 +47,7 @@ body {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  height: 210px;
+  height: 270px;
 }
 .game-buttons {
   display: grid;
@@ -67,6 +70,28 @@ body {
   box-shadow: 1px 1px 10px 10px rgb(109, 173, 106);
   transform: rotate(30deg);
   /* transition-duration: 0.12s; */
+}
+.result-counter {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.game h3 span {
+  margin: 3px;
+}
+.game .reset {
+  background-color: rgb(177, 53, 53);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.game .reset:active {
+  transform: scale(1.03);
+  transition-timing-function: ease-in-out;
+  box-shadow: 1px 1px 10px 1px gray;
 }
 
 @media (max-width: 890px) {

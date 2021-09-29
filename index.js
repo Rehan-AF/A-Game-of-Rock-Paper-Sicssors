@@ -1,10 +1,17 @@
+// user input buttons
 let userInput = document.querySelectorAll(".option");
 
-for (i = 0; i < userInput.length; i++) {
+let result = document.getElementById("result");
+let winLost = document.querySelector(".counter");
+// score
+let win = document.querySelector(".win");
+let lose = document.querySelector(".lost");
+let p = 1;
+let z = 1;
+for (let i = 0; i < userInput.length; i++) {
   userInput[i].addEventListener("click", function game1(e) {
     // result display variable
-    let result = document.getElementById("result");
-    let winLost = document.querySelector(".counter");
+
     //  computer values
     let randomNumber = Math.floor(Math.random() * 3);
 
@@ -47,5 +54,25 @@ for (i = 0; i < userInput.length; i++) {
     } else {
       console.log(`not working`);
     }
+
+    // storing score
+    let getscore = document.querySelector(".get-score").textContent;
+
+    if (getscore == "you win") {
+      console.log("win workin");
+      win.innerHTML = p++;
+    } else if (getscore == "you lose") {
+      console.log("lose workin");
+      lose.innerHTML = z++;
+    }
   });
 }
+let resetScore = document.querySelector(".reset");
+resetScore.addEventListener("click", function () {
+  result.innerHTML = " ";
+  winLost.innerHTML = " ";
+  win.textContent = `0`;
+  p = 1;
+  lose.textContent = `0`;
+  z = 1;
+});
