@@ -23,7 +23,7 @@ for (let i = 0; i < userInput.length; i++) {
         result.innerHTML = `computer picked rock `;
         winLost.innerHTML = `<span class="game-tie">tie</span>`;
       } else if (randomNumber == 1) {
-        result.innerHTML = `conputer picked paper  `;
+        result.innerHTML = `computer picked paper  `;
         winLost.innerHTML = `<span class="game-lost">you lose</span>`;
       } else if (randomNumber == 2) {
         result.innerHTML = `computer picked scissors `;
